@@ -5,7 +5,29 @@ header {
   margin-bottom: 20px;
   background-color: antiquewhite;
   justify-content: space-between;
-  align-items: center;
+  align-items: center
+}
+
+.logo {
+  display: flex;
+  height: 55px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 100%;
+}
+.logo h2 {
+  padding: 10px;
+  font-size: 35px;
+  align-self: center;
+  margin-left: 10px;
+  color: rgb(221, 178, 121);
+}
+
+.logo h2:hover{
+  color: grey;
 }
 
 header nav {
@@ -22,18 +44,8 @@ header nav a {
   color: rgb(221, 178, 121);
 }
 
-.logo {
-  display: flex;
-  height: 55px;
-  margin: 10px;
-  text-decoration: none;
-}
-
-.logo h2 {
-  font-size: 35px;
-  align-self: center;
-  margin-left: 10px;
-  color: rgb(221, 178, 121);
+header nav a:hover{
+  color:grey;
 }
 
 
@@ -56,7 +68,6 @@ body.bg-peachpuff {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  text-align: center;
 }
 
 .product:hover {
@@ -144,6 +155,16 @@ nav ul li {
   margin-bottom: 10px;
 }
 
+nav ul li a {
+  font-size: 18px;
+  color: rgb(221, 178, 121);
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  color: grey;
+}
+
 .newsletter-form {
   flex: 1;
   text-align: right;
@@ -162,3 +183,58 @@ nav ul li {
 .newsletter-form button[type="submit"] {
   margin-top: 10px;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .logo {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .logo h2 {
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+  header nav {
+    display: flex;
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  header nav a {
+    margin-right: 10px;
+  }
+
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .logo h2 {
+    font-size: 20px;
+  }
+
+  header nav {
+    display: flex;
+    font-size: 20px;
+  }
+
+  header nav a {
+    margin-right: 10px;
+  }
+
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .newsletter-form {
+    text-align: center;
+  }
+
+  .col {
+    margin-right: 0;
+  }
+}
+
