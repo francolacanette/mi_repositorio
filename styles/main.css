@@ -18,7 +18,7 @@ header {
 .logo img {
   height: 100%;
 }
-.logo h2 {
+.logo h1 {
   padding: 10px;
   font-size: 35px;
   align-self: center;
@@ -26,7 +26,7 @@ header {
   color: rgb(221, 178, 121);
 }
 
-.logo h2:hover{
+.logo h1:hover{
   color: grey;
 }
 
@@ -38,13 +38,18 @@ header nav {
   padding-right: 20px;
 }
 
-header nav a {
+header nav ul li {
+  display: inline;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 10px;
   color: rgb(221, 178, 121);
 }
 
-header nav a:hover{
+header nav ul li a {
+font-size: 25px;
+}
+
+header nav ul li a:hover{
   color:grey;
 }
 
@@ -55,6 +60,33 @@ body.bg-peachpuff {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 10px;
 }
+
+#inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#inicio .banner {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+#inicio .btn-default {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: antiquewhite;
+  color: rgb(221, 178, 121);
+}
+
+#inicio .btn-default:hover {
+background-color: grey;
+}
+
 
 .product-container {
   display: grid;
@@ -95,32 +127,6 @@ body.bg-peachpuff {
 img.banner {
   max-width: 100%;
   height: auto;
-}
-
-#inicio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-#inicio .banner {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-#inicio .btn-default {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  background-color: antiquewhite;
-  color: rgb(221, 178, 121);
-}
-
-#inicio .btn-default:hover {
-background-color: grey;
 }
 
 

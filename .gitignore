@@ -1,1 +1,3 @@
 .gitattributes
+package.json
+*.css.map
