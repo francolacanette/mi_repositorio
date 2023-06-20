@@ -1,4 +1,3 @@
-/* Header */
 header {
   display: flex;
   height: 70px;
@@ -8,18 +7,18 @@ header {
   align-items: center;
 }
 
-.logo {
+header .logo {
   display: flex;
   height: 55px;
   margin: 10px;
   text-decoration: none;
 }
 
-.logo img {
+header .logo img {
   height: 100%;
 }
 
-.logo h1 {
+header .logo h1 {
   padding: 10px;
   font-size: 35px;
   align-self: center;
@@ -27,7 +26,7 @@ header {
   color: rgb(221, 178, 121);
 }
 
-.logo h1:hover {
+header .logo h1:hover {
   color: grey;
 }
 
@@ -39,14 +38,20 @@ header nav {
   padding-right: 20px;
 }
 
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 header nav ul li {
-  display: inline;
-  text-decoration: none;
   margin-right: 10px;
-  color: rgb(221, 178, 121);
 }
 
 header nav ul li a {
+  text-decoration: none;
+  color: rgb(221, 178, 121);
   font-size: 25px;
 }
 
@@ -54,7 +59,6 @@ header nav ul li a:hover {
   color: grey;
 }
 
-/* Body */
 body.bg-peachpuff {
   background-color: peachpuff;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -112,7 +116,7 @@ body.bg-peachpuff {
 
 .product p {
   font-size: 16px;
-  color: gray;
+  color: grey;
 }
 
 .product img.producto {
@@ -127,7 +131,6 @@ img.banner {
   height: auto;
 }
 
-/* Footer */
 footer {
   background-color: antiquewhite;
   padding: 20px;
@@ -153,17 +156,14 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-
 nav ul li {
   margin-bottom: 10px;
 }
-
 nav ul li a {
   font-size: 18px;
   color: rgb(221, 178, 121);
   text-decoration: none;
 }
-
 nav ul li a:hover {
   color: grey;
 }
@@ -172,22 +172,18 @@ nav ul li a:hover {
   flex: 1;
   text-align: right;
 }
-
 .newsletter-form form {
   text-align: left;
 }
-
 .newsletter-form h4,
 .newsletter-form p {
   margin: 0;
 }
-
 .newsletter-form input[type=email],
 .newsletter-form button[type=submit] {
   margin-top: 10px;
 }
 
-/* Media Queries */
 @media only screen and (max-width: 768px) {
   .logo {
     justify-content: center;
