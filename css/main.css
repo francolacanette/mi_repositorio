@@ -189,7 +189,7 @@ nav ul li a:hover {
     justify-content: center;
     margin-right: 0;
   }
-  .logo h2 {
+  .logo h1 {
     font-size: 25px;
     margin-left: 0;
   }
@@ -206,8 +206,8 @@ nav ul li a:hover {
   }
 }
 @media only screen and (max-width: 576px) {
-  .logo h2 {
-    font-size: 20px;
+  .logo h1 {
+    display: none;
   }
   header nav {
     display: flex;
