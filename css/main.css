@@ -179,13 +179,25 @@ ul li a:hover {
 .newsletter-form form {
   text-align: left;
 }
-.newsletter-form h4,
-.newsletter-form p {
-  margin: 0;
+.newsletter-form h4 {
+  color: rgb(221, 178, 121);
 }
-.newsletter-form input[type=email],
+.newsletter-form p {
+  color: rgb(221, 178, 121);
+  margin: 0;
+  margin-bottom: 10px;
+}
+.newsletter-form input[type=email] {
+  background-color: antiquewhite;
+}
 .newsletter-form button[type=submit] {
+  background-color: antiquewhite;
+  color: rgb(221, 178, 121);
+  accent-color: grey;
   margin-top: 10px;
+}
+.newsletter-form button[type=submit]:hover {
+  color: grey;
 }
 
 @media only screen and (max-width: 768px) {

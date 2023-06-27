@@ -192,14 +192,29 @@ li {
     text-align: left;
   }
 
-  h4,
-  p {
-    margin: 0;
+  h4 {
+    color:$primary-color;
   }
 
-  input[type=email],
+  p {
+    color:$primary-color;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  input[type=email] {
+    background-color: $secondary-color;
+  }
+
   button[type=submit] {
+    background-color:$secondary-color;
+    color: $primary-color;
+    accent-color: $accent-color;
     margin-top: 10px;
+
+    &:hover {
+      color:$accent-color;
+    }
   }
 }
 
