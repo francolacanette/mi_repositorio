@@ -73,7 +73,7 @@ body.bg-peachpuff {
   margin: 10px;
 }
 
-#inicio {
+.inicio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,13 +81,13 @@ body.bg-peachpuff {
   margin-bottom: 20px;
 }
 
-#inicio .banner {
+.inicio .banner {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
-#inicio .btn-default {
+.inicio .btn-default {
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -95,7 +95,7 @@ body.bg-peachpuff {
   color: $primary-color;
 }
 
-#inicio .btn-default:hover {
+.inicio .btn-default:hover {
   background-color: $accent-color;
 }
 
@@ -139,6 +139,10 @@ img.banner {
   height: auto;
 }
 
+.faq dd {
+  margin-bottom: 2em;
+}
+
 // Footer
 footer {
   background-color: $secondary-color;
@@ -160,12 +164,12 @@ footer {
   margin-right: 20px;
 }
 
-nav ul {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 
-  li {
+li {
     margin-bottom: 10px;
 
     a {
