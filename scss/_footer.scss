@@ -1,0 +1,75 @@
+// Footer
+footer {
+    background-color: $secondary-color;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .col {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .col:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+  li {
+      margin-bottom: 10px;
+  
+      a {
+        font-size: 18px;
+        color: $primary-color;
+        text-decoration: none;
+  
+        &:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
+  
+  .newsletter-form {
+    flex: 1;
+    text-align: right;
+  
+    form {
+      text-align: left;
+    }
+  
+    h4 {
+      color:$primary-color;
+    }
+  
+    p {
+      color:$primary-color;
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  
+    input[type=email] {
+      background-color: $secondary-color;
+    }
+  
+    button[type=submit] {
+      background-color:$secondary-color;
+      color: $primary-color;
+      accent-color: $accent-color;
+      margin-top: 10px;
+  
+      &:hover {
+        color:$accent-color;
+      }
+    }
+  }
+  

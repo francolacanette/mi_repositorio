@@ -1,8 +1,50 @@
+@media only screen and (max-width: 768px) {
+  .logo {
+    justify-content: center;
+    margin-right: 0;
+  }
+  .logo h1 {
+    font-size: 25px;
+    margin-left: 0;
+  }
+  header nav {
+    display: flex;
+    margin-right: 0;
+    font-size: 20px;
+  }
+  header nav a {
+    margin-right: 10px;
+  }
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+@media only screen and (max-width: 576px) {
+  .logo h1 {
+    display: none;
+  }
+  header nav {
+    display: flex;
+    font-size: 20px;
+  }
+  header nav a {
+    margin-right: 10px;
+  }
+  .product-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .newsletter-form {
+    text-align: center;
+  }
+  .col {
+    margin-right: 0;
+  }
+}
 header {
   display: flex;
   height: 70px;
   margin-bottom: 20px;
-  background-color: antiquewhite;
+  background-color: rgb(230, 204, 178);
   justify-content: space-between;
   align-items: center;
 }
@@ -23,7 +65,7 @@ header .logo h1 {
   font-size: 35px;
   align-self: center;
   margin-left: 10px;
-  color: rgb(221, 178, 121);
+  color: rgb(176, 137, 104);
 }
 
 header .logo h1:hover {
@@ -51,7 +93,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: rgb(221, 178, 121);
+  color: rgb(176, 137, 104);
   font-size: 25px;
 }
 
@@ -60,8 +102,8 @@ header nav ul li a:hover {
 }
 
 body.bg-peachpuff {
-  background-color: peachpuff;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(221, 184, 146);
+  font-family: "Raleway";
   margin: 10px;
 }
 
@@ -83,8 +125,8 @@ body.bg-peachpuff {
   display: block;
   margin: 0 auto;
   text-align: center;
-  background-color: antiquewhite;
-  color: rgb(221, 178, 121);
+  background-color: rgb(230, 204, 178);
+  color: rgb(176, 137, 104);
 }
 
 .inicio .btn-default:hover {
@@ -136,7 +178,7 @@ img.banner {
 }
 
 footer {
-  background-color: antiquewhite;
+  background-color: rgb(230, 204, 178);
   padding: 20px;
 }
 
@@ -165,7 +207,7 @@ ul li {
 }
 ul li a {
   font-size: 18px;
-  color: rgb(221, 178, 121);
+  color: rgb(176, 137, 104);
   text-decoration: none;
 }
 ul li a:hover {
@@ -180,67 +222,24 @@ ul li a:hover {
   text-align: left;
 }
 .newsletter-form h4 {
-  color: rgb(221, 178, 121);
+  color: rgb(176, 137, 104);
 }
 .newsletter-form p {
-  color: rgb(221, 178, 121);
+  color: rgb(176, 137, 104);
   margin: 0;
   margin-bottom: 10px;
 }
 .newsletter-form input[type=email] {
-  background-color: antiquewhite;
+  background-color: rgb(230, 204, 178);
 }
 .newsletter-form button[type=submit] {
-  background-color: antiquewhite;
-  color: rgb(221, 178, 121);
+  background-color: rgb(230, 204, 178);
+  color: rgb(176, 137, 104);
   accent-color: grey;
   margin-top: 10px;
 }
 .newsletter-form button[type=submit]:hover {
   color: grey;
-}
-
-@media only screen and (max-width: 768px) {
-  .logo {
-    justify-content: center;
-    margin-right: 0;
-  }
-  .logo h1 {
-    font-size: 25px;
-    margin-left: 0;
-  }
-  header nav {
-    display: flex;
-    margin-right: 0;
-    font-size: 20px;
-  }
-  header nav a {
-    margin-right: 10px;
-  }
-  .product-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
-@media only screen and (max-width: 576px) {
-  .logo h1 {
-    display: none;
-  }
-  header nav {
-    display: flex;
-    font-size: 20px;
-  }
-  header nav a {
-    margin-right: 10px;
-  }
-  .product-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  .newsletter-form {
-    text-align: center;
-  }
-  .col {
-    margin-right: 0;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,54 @@
+// Media Queries
+@media only screen and (max-width: 768px) {
+    .logo {
+      justify-content: center;
+      margin-right: 0;
+  
+      h1 {
+        font-size: 25px;
+        margin-left: 0;
+      }
+    }
+  
+    header nav {
+      display: flex;
+      margin-right: 0;
+      font-size: 20px;
+  
+      a {
+        margin-right: 10px;
+      }
+    }
+  
+    .product-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .logo h1 {
+      display: none;
+    }
+  
+    header nav {
+      display: flex;
+      font-size: 20px;
+  
+      a {
+        margin-right: 10px;
+      }
+    }
+  
+    .product-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .newsletter-form {
+      text-align: center;
+    }
+  
+    .col {
+      margin-right: 0;
+    }
+  }
+  
