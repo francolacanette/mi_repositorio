@@ -63,6 +63,7 @@ header .logo img {
 header .logo h1 {
   padding: 10px;
   font-size: 35px;
+  font-weight: 900;
   align-self: center;
   margin-left: 10px;
   color: rgb(176, 137, 104);
@@ -92,6 +93,7 @@ header nav ul li {
 }
 
 header nav ul li a {
+  font-weight: 900;
   text-decoration: none;
   color: rgb(176, 137, 104);
   font-size: 25px;
@@ -103,7 +105,7 @@ header nav ul li a:hover {
 
 body.bg-peachpuff {
   background-color: rgb(221, 184, 146);
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   margin: 10px;
 }
 
@@ -125,6 +127,7 @@ body.bg-peachpuff {
   display: block;
   margin: 0 auto;
   text-align: center;
+  font-weight: 900;
   background-color: rgb(230, 204, 178);
   color: rgb(176, 137, 104);
 }
@@ -173,8 +176,35 @@ img.banner {
   height: auto;
 }
 
+main h2 {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.faq dt {
+  font-size: 18px;
+}
+
 .faq dd {
+  font-size: 18px;
   margin-bottom: 2em;
+}
+
+.nosotros p {
+  font-size: 18px;
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.p p {
+  font-size: 25px;
+  font-weight: 900;
+  margin-top: 50px;
 }
 
 footer {
@@ -207,6 +237,7 @@ ul li {
 }
 ul li a {
   font-size: 18px;
+  font-weight: 900;
   color: rgb(176, 137, 104);
   text-decoration: none;
 }
@@ -223,20 +254,28 @@ ul li a:hover {
 }
 .newsletter-form h4 {
   color: rgb(176, 137, 104);
+  font-weight: 900;
 }
 .newsletter-form p {
   color: rgb(176, 137, 104);
+  font-weight: 500;
   margin: 0;
   margin-bottom: 10px;
 }
 .newsletter-form input[type=email] {
   background-color: rgb(230, 204, 178);
 }
+.newsletter-form input[type=email]::placeholder {
+  opacity: 1;
+  font-weight: 700;
+}
 .newsletter-form button[type=submit] {
   background-color: rgb(230, 204, 178);
   color: rgb(176, 137, 104);
   accent-color: grey;
+  font-weight: 900;
   margin-top: 10px;
+  margin-left: 5px;
 }
 .newsletter-form button[type=submit]:hover {
   color: grey;

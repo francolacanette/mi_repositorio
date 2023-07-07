@@ -29,6 +29,7 @@ footer {
   
       a {
         font-size: 18px;
+        font-weight: 900;
         color: $primary-color;
         text-decoration: none;
   
@@ -49,23 +50,33 @@ footer {
   
     h4 {
       color:$primary-color;
+      font-weight: 900;
     }
   
     p {
       color:$primary-color;
+      font-weight: 500;
       margin: 0;
       margin-bottom: 10px;
     }
   
     input[type=email] {
       background-color: $secondary-color;
+      
+    }
+
+    input[type=email]::placeholder {
+      opacity: 1;
+      font-weight: 700;
     }
   
     button[type=submit] {
       background-color:$secondary-color;
       color: $primary-color;
       accent-color: $accent-color;
+      font-weight: 900;
       margin-top: 10px;
+      margin-left: 5px;
   
       &:hover {
         color:$accent-color;
